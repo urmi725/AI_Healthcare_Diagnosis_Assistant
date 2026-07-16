@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🩺 HealthAI — AI-Powered Healthcare Diagnosis Assistant
+# 🩺 AI-Powered Healthcare Diagnosis Assistant
 
 **Enter symptoms → get a likely condition, a risk level, and who to see.**
 
