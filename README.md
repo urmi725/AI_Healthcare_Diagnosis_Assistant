@@ -31,14 +31,16 @@ type of specialist — with emergency alerts for critical symptom combinations.
 
 **Symptom check** — tap-to-select symptom chips with live search & a running counter
 
-<img src="images/screenshot-symptom-check.png" alt="Symptom check form" width="100%">
+<img width="900" height="1200" alt="01_form" src="https://github.com/user-attachments/assets/c1dc165f-6c90-4e4d-8300-87f14064166a" alt="Symptom check form" width="100%"/>
+
 
 </td>
 <td width="50%">
 
 **Results report** — likely condition, risk level, confidence bars, and recommendations
 
-<img src="images/screenshot-report.png" alt="Diagnosis report" width="100%">
+<img width="900" height="1400" alt="02_report" src="https://github.com/user-attachments/assets/31506ffb-0b5c-4f25-b2c1-39aec2445daa" alt="Diagnosis report" width="100%"/>
+
 
 </td>
 </tr>
@@ -47,7 +49,8 @@ type of specialist — with emergency alerts for critical symptom combinations.
 
 **History** — every past check, saved locally
 
-<img src="images/screenshot-history.png" alt="Prediction history" width="100%">
+<img width="599" height="382" alt="03_history" src="https://github.com/user-attachments/assets/e271eebe-a4e4-4336-b6be-9ad948a9d7a2" alt="Prediction history" width="100%"/>
+
 
 </td>
 </tr>
