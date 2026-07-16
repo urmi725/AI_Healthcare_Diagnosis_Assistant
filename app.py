@@ -2,10 +2,6 @@
 app.py
 ------
 Flask web app for the AI-Powered Healthcare Diagnosis Assistant.
-
-IMPORTANT: This tool is for educational/informational purposes only.
-It does NOT provide medical diagnoses. Always consult a qualified
-healthcare professional.
 """
 
 from flask import Flask, render_template, request, redirect, url_for, flash
