@@ -117,3 +117,15 @@ F1, classification report) print automatically when you do.
 - Medication information is explicitly informational, with a visible disclaimer.
 - Emergency symptom combinations trigger a prominent warning banner.
 - Patient data is stored locally only (SQLite) — no external transmission.
+
+## Screenshot of the Project 
+
+- Form screenshot
+<img width="900" height="1200" alt="01_form" src="https://github.com/user-attachments/assets/c4f51fad-33f3-495c-80f6-bd81c2b3c45c" />
+
+-Report screenshot
+  <img width="900" height="1400" alt="02_report" src="https://github.com/user-attachments/assets/002dd931-7af7-4207-a5fc-cd5d9e4ca082" />
+
+- History screenshot
+<img width="599" height="382" alt="03_history" src="https://github.com/user-attachments/assets/9b28fb22-2ddb-4415-b983-661089c49665" />
+
