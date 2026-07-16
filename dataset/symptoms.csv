@@ -1,0 +1,39 @@
+symptom,display_name,severity_weight
+fever,Fever,3
+high_fever,High Fever,4
+cough,Cough,2
+headache,Headache,2
+fatigue,Fatigue,2
+sore_throat,Sore Throat,1
+runny_nose,Runny Nose,1
+sneezing,Sneezing,1
+body_ache,Body Ache,2
+chills,Chills,2
+nausea,Nausea,2
+vomiting,Vomiting,3
+diarrhea,Diarrhea,3
+abdominal_pain,Abdominal Pain,3
+chest_pain,Chest Pain,5
+breathing_difficulty,Breathing Difficulty,5
+dizziness,Dizziness,3
+rash,Rash,2
+itching,Itching,1
+joint_pain,Joint Pain,2
+loss_of_appetite,Loss Of Appetite,2
+weight_loss,Weight Loss,3
+night_sweats,Night Sweats,3
+blood_in_vomit,Blood In Vomit,5
+blood_in_stool,Blood In Stool,5
+palpitations,Palpitations,4
+excessive_thirst,Excessive Thirst,2
+frequent_urination,Frequent Urination,2
+blurred_vision,Blurred Vision,3
+numbness,Numbness,3
+confusion,Confusion,5
+sensitivity_to_light,Sensitivity To Light,2
+muscle_weakness,Muscle Weakness,3
+yellowing_of_skin,Yellowing Of Skin,4
+swelling,Swelling,3
+sweating,Sweating,1
+anxiety_feeling,Anxiety Feeling,2
+wheezing,Wheezing,4

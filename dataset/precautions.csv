@@ -1,0 +1,72 @@
+Disease,Precaution
+Flu,Rest and hydrate
+Flu,Isolate to avoid spreading
+Flu,Monitor temperature
+Flu,Consult a physician if symptoms worsen
+Common Cold,Rest
+Common Cold,Drink warm fluids
+Common Cold,Steam inhalation
+Common Cold,Avoid cold exposure
+COVID-19,Isolate immediately
+COVID-19,Monitor oxygen levels
+COVID-19,Stay hydrated
+COVID-19,Seek care if breathing difficulty occurs
+Food Poisoning,Stay hydrated (ORS)
+Food Poisoning,Avoid solid food temporarily
+Food Poisoning,Rest
+Food Poisoning,Seek care if symptoms persist beyond 48 hrs
+Migraine,Rest in a dark quiet room
+Migraine,Stay hydrated
+Migraine,Avoid known triggers
+Migraine,Consult neurologist if frequent
+Dengue,Stay hydrated
+Dengue,Avoid aspirin/ibuprofen
+Dengue,Monitor platelet count
+Dengue,Seek immediate care if bleeding occurs
+Typhoid,Drink boiled/purified water
+Typhoid,Maintain hygiene
+Typhoid,Complete full antibiotic course if prescribed
+Typhoid,Rest
+Gastritis,Avoid spicy/oily food
+Gastritis,Eat smaller meals
+Gastritis,Avoid alcohol
+Gastritis,Consult doctor if pain persists
+Bronchitis,Rest voice and body
+Bronchitis,Stay hydrated
+Bronchitis,Avoid smoke/irritants
+Bronchitis,Use humidifier
+Pneumonia,Seek prompt medical evaluation
+Pneumonia,Rest
+Pneumonia,Stay hydrated
+Pneumonia,Monitor breathing closely
+Diabetes,Monitor blood sugar
+Diabetes,Maintain balanced diet
+Diabetes,Regular exercise
+Diabetes,Consult endocrinologist
+Hypertension,Reduce salt intake
+Hypertension,Monitor blood pressure regularly
+Hypertension,Manage stress
+Hypertension,Consult physician
+Allergic Rhinitis,Avoid known allergens
+Allergic Rhinitis,Keep living areas dust-free
+Allergic Rhinitis,Consider antihistamines (consult doctor)
+Chickenpox,Isolate to prevent spread
+Chickenpox,Avoid scratching
+Chickenpox,Keep skin clean
+Chickenpox,Consult doctor for children/adults at risk
+Jaundice,Rest
+Jaundice,Avoid alcohol and fatty food
+Jaundice,Stay hydrated
+Jaundice,Seek prompt medical evaluation
+Urinary Tract Infection,Drink plenty of water
+Urinary Tract Infection,Maintain hygiene
+Urinary Tract Infection,Avoid holding urine
+Urinary Tract Infection,Consult doctor for antibiotics
+Anxiety Disorder,Practice relaxation/breathing exercises
+Anxiety Disorder,Reduce caffeine
+Anxiety Disorder,Maintain sleep routine
+Anxiety Disorder,Consider consulting a mental health professional
+Asthma,"Avoid triggers (dust, smoke)"
+Asthma,Keep rescue inhaler accessible
+Asthma,Monitor breathing
+Asthma,Seek care if attacks worsen

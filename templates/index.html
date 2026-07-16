@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% block title %}New Symptom Check — HealthAI Assistant{% endblock %}
+{% block content %}
+
+<p class="eyebrow">Symptom check</p>
+<h1 class="page-title">Tell us what's going on</h1>
+<p class="page-sub">A couple of details and your symptoms — we'll estimate what's likely, how urgent it is, and who to see.</p>
+
+<form action="{{ url_for('predict_route') }}" method="POST">
+
+  <div class="card">
+    <p class="section-label">About the patient</p>
+    <div class="field-grid">
+      <div class="field">
+        <label for="f-name">Name <span class="hint">(optional)</span></label>
+        <input type="text" class="input" id="f-name" name="name" placeholder="Jane Doe">
+      </div>
+      <div class="field">
+        <label for="f-age">Age</label>
+        <input type="number" class="input" id="f-age" name="age" min="0" max="120" required>
+      </div>
+      <div class="field">
+        <label for="f-gender">Gender</label>
+        <select class="input" id="f-gender" name="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="f-duration">Symptom duration</label>
+        <input type="text" class="input" id="f-duration" name="duration" placeholder="e.g. 3 days">
+      </div>
+    </div>
+    <div class="field-grid">
+      <div class="field">
+        <label for="f-weight">Weight (kg)</label>
+        <input type="number" step="0.1" class="input" id="f-weight" name="weight" placeholder="70">
+      </div>
+      <div class="field">
+        <label for="f-height">Height (m)</label>
+        <input type="number" step="0.01" class="input" id="f-height" name="height" placeholder="1.75">
+      </div>
+      <div class="field">
+        <label for="f-temp">Temperature (°C)</label>
+        <input type="number" step="0.1" class="input" id="f-temp" name="temperature" placeholder="37.5">
+      </div>
+      <div class="field">
+        <label for="f-existing">Existing conditions <span class="hint">(optional)</span></label>
+        <input type="text" class="input" id="f-existing" name="existing_diseases" placeholder="e.g. Diabetes">
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="section-label">Symptoms <span style="color:var(--risk-high)">*</span></p>
+
+    <div class="symptom-search">
+      <input type="text" class="input" id="symptomSearch" placeholder="Search symptoms — e.g. fever, cough, rash...">
+    </div>
+    <p class="symptom-counter" id="symptomCounter">No symptoms selected yet</p>
+
+    <div class="chip-grid">
+      {% for key, display in symptoms %}
+      <div class="chip-item">
+        <input type="checkbox" name="symptoms" value="{{ key }}" id="sym-{{ key }}">
+        <label for="sym-{{ key }}">{{ display }}</label>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary btn-block">See my likely conditions</button>
+</form>
+
+{% endblock %}

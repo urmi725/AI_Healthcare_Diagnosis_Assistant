@@ -1,0 +1,19 @@
+Disease,Recommended_Specialist
+Flu,General Physician
+Common Cold,General Physician
+COVID-19,General Physician / Pulmonologist
+Food Poisoning,General Physician / Gastroenterologist
+Migraine,Neurologist
+Dengue,General Physician / Infectious Disease Specialist
+Typhoid,General Physician / Infectious Disease Specialist
+Gastritis,Gastroenterologist
+Bronchitis,Pulmonologist
+Pneumonia,Pulmonologist
+Diabetes,Endocrinologist
+Hypertension,Cardiologist
+Allergic Rhinitis,ENT Specialist / Allergist
+Chickenpox,Dermatologist / General Physician
+Jaundice,Hepatologist / Gastroenterologist
+Urinary Tract Infection,Urologist
+Anxiety Disorder,Psychiatrist / Psychologist
+Asthma,Pulmonologist

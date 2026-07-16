@@ -1,0 +1,19 @@
+Disease,Medication_Info
+Flu,"Paracetamol (fever/pain), fluids, rest"
+Common Cold,"Cetirizine (antihistamine), Paracetamol if needed"
+COVID-19,Paracetamol for fever; follow physician guidance
+Food Poisoning,Oral Rehydration Salts (ORS)
+Migraine,Paracetamol/Ibuprofen (consult doctor for frequent migraines)
+Dengue,Paracetamol only (AVOID Aspirin/Ibuprofen)
+Typhoid,Antibiotics as prescribed by physician
+Gastritis,Antacid
+Bronchitis,"Cough suppressant, fluids"
+Pneumonia,Antibiotics as prescribed (needs medical evaluation)
+Diabetes,"As prescribed by endocrinologist (e.g., Metformin)"
+Hypertension,"As prescribed by physician (e.g., ACE inhibitors)"
+Allergic Rhinitis,"Antihistamine (e.g., Cetirizine)"
+Chickenpox,"Calamine lotion, antihistamine for itching"
+Jaundice,Supportive care; needs medical evaluation
+Urinary Tract Infection,Antibiotics as prescribed by physician
+Anxiety Disorder,Consult mental health professional; therapy first-line
+Asthma,Bronchodilator inhaler as prescribed

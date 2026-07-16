@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}Your results — HealthAI Assistant{% endblock %}
+{% block content %}
+
+{% if report.emergency_alerts %}
+<div class="alert alert-danger">
+  <div class="alert-title">⚠ Emergency warning</div>
+  <ul>
+    {% for a in report.emergency_alerts %}<li>{{ a }}</li>{% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="card">
+  <div class="report-hero">
+    <div>
+      <p class="eyebrow">Your results</p>
+      <h1 class="page-title" style="margin-bottom:2px;">{{ report.top_disease }}</h1>
+      <p class="report-patient"><strong>{{ report.patient_name }}</strong> &middot; Age {{ report.age }} &middot; {{ report.gender }}</p>
+    </div>
+    <span class="risk-pill risk-{{ report.risk_level|lower }}">{{ report.risk_level }} risk</span>
+  </div>
+
+  <div class="stat-strip">
+    <div class="stat-box">
+      <div class="label">BMI</div>
+      <div class="value">{{ report.bmi if report.bmi else "—" }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">Severity score</div>
+      <div class="value">{{ report.severity_score }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">Risk score</div>
+      <div class="value">{{ report.risk_score }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="label">Symptoms reported</div>
+      <div class="value">{{ report.symptoms|length }}</div>
+    </div>
+  </div>
+
+  <p class="section-label">Reported symptoms</p>
+  <div style="margin-bottom:8px;">
+    {% for s in report.symptoms %}
+      <span class="tag">{{ s.replace('_',' ')|title }}</span>
+    {% endfor %}
+  </div>
+
+  <hr class="divider">
+
+  <p class="section-label">Most likely conditions</p>
+  <p class="page-sub" style="margin-bottom:16px;">Estimated possibilities based on your symptom pattern — not a confirmed diagnosis.</p>
+  {% for disease, prob in report.predictions %}
+  <div class="pred-row">
+    <div class="top">
+      <span class="name">{{ disease }}</span>
+      <span class="pct">{{ prob }}%</span>
+    </div>
+    <div class="pred-track">
+      <div class="pred-fill {{ '' if loop.first else 'secondary' }}" style="width: {{ prob }}%"></div>
+    </div>
+  </div>
+  {% endfor %}
+
+  <hr class="divider">
+
+  <div class="info-grid">
+    <div>
+      <p class="section-label">Recommended specialist</p>
+      <p style="font-size:1.1rem; font-weight:700; margin:0 0 20px;">{{ report.specialist }}</p>
+
+      <p class="section-label">Medication info</p>
+      <p style="color:var(--text-muted); margin:0;">{{ report.medication_info }}</p>
+      <p class="med-disclaimer">Informational only — always consult a healthcare professional before taking any medication.</p>
+    </div>
+    <div>
+      <p class="section-label">Precautions &amp; advice</p>
+      <ul>
+        {% for p in report.precautions %}<li>{{ p }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="action-row no-print">
+  <a href="{{ url_for('index') }}" class="btn btn-outline">New check</a>
+  <a href="{{ url_for('history') }}" class="btn btn-outline">View history</a>
+  <button class="btn btn-outline" onclick="window.print()">Print / save PDF</button>
+</div>
+
+{% endblock %}

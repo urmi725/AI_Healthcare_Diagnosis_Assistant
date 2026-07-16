@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}HealthAI Assistant{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header class="site-header no-print">
+  <div class="row">
+    <a class="brand" href="{{ url_for('index') }}">
+      <span class="brand-mark">+</span> HealthAI Assistant
+    </a>
+    <nav class="nav-links">
+      <a href="{{ url_for('index') }}" class="{{ 'active' if request.endpoint == 'index' }}">New check</a>
+      <a href="{{ url_for('history') }}" class="{{ 'active' if request.endpoint == 'history' }}">History</a>
+    </nav>
+  </div>
+</header>
+
+<main class="page">
+  <div class="wrap-wide">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for m in messages %}
+          <div class="alert alert-warn">{{ m }}</div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </div>
+</main>
+
+<footer class="site-footer no-print">
+  <div class="wrap-wide">
+    <p><strong>Educational tool only.</strong> Not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider, and seek emergency care for severe or worsening symptoms.</p>
+  </div>
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
